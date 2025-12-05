@@ -13,4 +13,5 @@ target_include_directories(SPI_ST7735S_Driver PRIVATE
 )
 
 add_executable(spi_st7735s_driver_demo main.c)
-
+target_include_directories(spi_st7735s_driver_demo PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_link_libraries(spi_st7735s_driver_demo PRIVATE SPI_ST7735S_Driver)
