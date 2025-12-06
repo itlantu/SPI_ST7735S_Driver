@@ -66,6 +66,44 @@ typedef enum {
 
 
 	/* 面板功能指令 */
+	// 正常模式(全色)帧率控制
+	FRMCTR1 = 0xB1,
+	// 空闲模式(8色)帧率控制
+	FRMCTR2 = 0xB2,
+	// 部分模式+全色帧率控制
+	FRMCTR3 = 0xB3,
+	// 显示反转控制(点反转/列反转)
+	INVCTR = 0xB4,
+	// 电源控制1(设置AVDD/GVDD电压)
+	PWCTR1 = 0xC0,
+	// 电源控制2(设置VGH/VGL电压)
+	PWCTR2 = 0xC1,
+	// 正常模式电源控制3(运放电流/ Booster电压)
+	PWCTR3 = 0xC2,
+	// 空闲模式电源控制4(运放电流/ Booster电压)
+	PWCTR4 = 0xC3,
+	// 部分模式电源控制5(运放电流/ Booster电压)
+	PWCTR5 = 0xC4,
+	// VCOM电压控制1
+	VMCTR1 = 0xC5,
+	// VCOM偏移控制(减少闪烁)
+	VMOFCTR = 0xC7,
+	// 写入模块版本ID到NVM
+	WRID2 = 0xD1,
+	// 写入项目代码到NVM
+	WRID3 = 0xD2,
+	// NVM控制状态(使能C7h/D1h指令)
+	NVCTR1 = 0xD9,
+	// NVM读取命令
+	NVCTR2 = 0xDE,
+	// NVM写入命令(编程/擦除)
+	NVCTR3 = 0xDF,
+	// 伽马校正(正极性)设置
+	GAMCTRP1 = 0xE0,
+	// 伽马校正(负极性)设置
+	GAMCTRN1 = 0xE1,
+	// 栅极泵时钟频率调节(节能)
+	GCV = 0xFC
 }ST7735S_Opcode_t;
 
 
