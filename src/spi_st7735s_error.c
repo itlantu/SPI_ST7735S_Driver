@@ -9,6 +9,7 @@ const char *ST7735S_ErrorTable[] = {
 	"ST7735S_FUNC_ARG3_NULL",
 	"ST7735S_FUNC_ARG4_NULL",
 	"ST7735S_FUNC_ARG5_NULL",
+	"ST7735S_RESET_UNKNOWN_TYPE",
 };
 
 // 判断ST7735S_ErrorTable与ST7735S_Error_t的数量是否匹配
